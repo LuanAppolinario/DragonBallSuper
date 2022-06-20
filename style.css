@@ -1,0 +1,192 @@
+@font-face {
+	font-family: "Saiyan-sans";
+	src: url(../fonts/Saiyan-sans.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saiyan-sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg{
+    background-image: url(Imagens/walpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+.main{
+    margin: 0px auto;
+    max-width: 1100px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px 2%;
+}
+
+.main h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 47px;
+    color:black;
+    text-align: center;
+}
+
+
+.personagens-boxes{
+    margin:5px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personagens-box{
+    cursor: pointer;
+    border-radius:10px;
+    width:25%;
+    margin:10px 4%;
+    background-color:rgb(230,230,230);
+    text-align: center;
+}
+
+.personagens-box:hover, .personagens-box:focus{
+    -webkit-box-shadow: 0px 10px 66px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 66px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 66px -24px rgba(0, 0, 0, 0.75); 
+    background-color: yellow;
+}
+
+.personagens-box img{
+    width: 100%;
+    max-height: 175px;
+}
+
+.personagens-box p{
+    color:black;
+    font-size: 40px;
+    text-align: center;
+    padding:5px 0;
+}
+
+.audio{
+    align-items: center;
+    text-align: center;
+}
+
+.result{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.result-box{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    width: 33.33%;
+    text-align: center;
+}
+
+.result-box img{
+    width: 100px;
+    max-height: 125px;
+}
+
+.res-text{
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.vencedor-div{
+    width: 100%;
+}
+
+#vencedor{
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img-vencedor{
+    width: 100px;
+    height: 100px;
+}
+
+#player-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 25%;
+    margin: 10% 6%;
+    background-color: rgba(255,255,255,0.5);
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+
+#inimigo-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 25%;
+    margin: 10% 6%;
+    background-color: rgba(255,255,255,0.5);
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.res-text button{
+    cursor: pointer;
+    font-size: 50px;
+    width: 15% ;
+    margin: 10% 5%;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.res-text button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+
+/* inverte a imagem do inimigo pra ficar de frente para o player*/
+#luta-inimigo{
+    transform: scaleX(-1);
+}
+
+.anim_left{
+    transition:1s;
+    margin-left: 200px;
+}
+
+.anim_right{
+    transition:1s;
+    margin-right: 200px;
+}
+
+@media screen and (max-width:768px){
+    .personagens-boxes{
+        align-items: center;
+        text-align: center;
+    }
+    .personagens-box{
+        width:100%;
+    }
+    .personagens-box img{
+        max-width: 100%;
+        max-height: 250px;
+    }
+}

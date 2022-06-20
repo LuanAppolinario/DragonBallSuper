@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Dragon Ball Super</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body id="fundo">
+    <div class="bg">        
+        <div class="main">
+            <h2>Selecione o seu Personagem</h2>
+            <div class="personagens-boxes">
+            </div><!---boxes-->
+
+        </div>
+        <!-- audio para quando passa o mouse sobre cada personagem-->
+        <audio id="som" src="Audios/som.wav" hidden></audio>
+        <!-- audio musica dragonball na tela de seleção -->
+        <div class="audio">
+            <audio controls="yes" loop="yes" autoplay="yes" id="musica_fundo" src="Audios/musica_fundo.mp3"></audio>
+        </div>
+        <!-- audio da luta quando o usuario clicar no botão lutar-->
+        <audio hidden loop="yes" id="som_luta" src="Audios/som-luta.mp3"></audio>
+    </div>
+    <!-- div para exibir o resultado da luta -->
+    <div class="res-text">
+        <div class="vencedor-div">
+        </div>
+        <h1 id="player-text"></h1>
+        <button name="lutar">LUTAR</button>
+        <h1 id="inimigo-text"></h1>
+    </div>
+    
+    <div class="result">
+        <div class="result-box">
+            <img id="luta-player"/>
+        </div>
+        <div class="result-box">
+            <img src="Imagens/vs.png">
+        </div>
+        <div class="result-box">
+            <img id="luta-inimigo"/>
+        </div>
+    </div>
+
+    <script src="dragonball.js"></script>
+    </body>
+</html>
+
